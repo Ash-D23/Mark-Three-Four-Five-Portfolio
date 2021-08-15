@@ -5,6 +5,7 @@
 
 html,body {
     height: 100%;
+    width: 100%;
 }
 
 body {
@@ -168,6 +169,7 @@ a{
 
 #home {
     height: 80vh;
+    width: 100%;
 }
 
 #home-cover{
@@ -190,7 +192,6 @@ a{
     color: #fff;
     font-size: 2.5rem;
     font-weight: 700;
-
 }
 
 .sub-title{
@@ -229,13 +230,14 @@ a{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 30%;
+  height: 100%;
   padding: 10px;
+  flex-wrap: wrap;
 
 }
 
 .container-skills{
-  height: 80%;
+  height: 60%;
   padding: 10px 0;
 }
 
@@ -396,4 +398,61 @@ a{
 
 .center h3{
   color: black;
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+
+  #home-heading h3{
+    font-size: 1.5rem;
+  }
+
+  .sub-title{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  #home-container{
+    height: 20vh;
+  }
+
+  #home-heading{
+    height: 50%;
+    margin: 20px 0;
+  }
+
+  .btn-general{
+    padding: 10px 15px 10px 15px;
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+
+
+
+
+  #projects{
+    height: 100vh;
+  }
+
+  .card{
+    flex: none;
+  }
+
+  #project{
+    margin: 0;
+  }
+
+  .blog-container{
+    margin: 0 10px;
+  }
+
+  .blog-image{
+    width: 80%;
+    height: 200px;
+  }
 }
